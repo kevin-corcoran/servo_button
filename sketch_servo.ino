@@ -17,10 +17,11 @@ void setup() {
 //
 void loop(){
   button.loop();
-  delay(1000);
+  // Make servo go to 0 degrees
+  Servo1.write(0);
   if (/* button is pressed */) {
-    /* code */
   // Make servo go to 90 degrees
     Servo1.write(90);
+    delay(1000);
   }
 }
